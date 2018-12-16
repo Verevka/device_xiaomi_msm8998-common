@@ -291,6 +291,7 @@ service vendor.rmt_storage /vendor/bin/rmt_storage
 service vendor.tftp_server /vendor/bin/tftp_server
     class core
     user root
+    group root system
 
 on property:sys.post_boot.parsed=1
     # Setup permission for powerHAL
