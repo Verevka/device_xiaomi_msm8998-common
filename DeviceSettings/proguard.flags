@@ -6,3 +6,7 @@
 -keep class com.xiaomi.settings.doze.* {
   *;
 }
+
+-keep class com.xiaomi.settings.doze.* {
+  *;
+}
