@@ -57,6 +57,9 @@
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
+    <!-- Whether the device has outdated qti-telephony-common.jar -->
+    <bool name="config_oldQtiTelephony">false</bool>
+
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
 
