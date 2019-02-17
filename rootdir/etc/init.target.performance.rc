@@ -161,6 +161,3 @@ on property:sys.boot_completed=1
 
     # Enable PowerHAL hint processing
     setprop vendor.powerhal.init 1
-
-on property:dev.bootcomplete=1
-    setprop sys.io.scheduler "bfq"
