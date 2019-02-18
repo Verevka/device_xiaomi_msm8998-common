@@ -20,7 +20,6 @@
     <string name="advanced_settings_summary">色彩校准、双击唤醒、CPU 运行模式</string>
 
     <string name="display_title">显示</string>
-    <string name="device_doze_title">环境显示</string>
 
     <!-- s2s -->
     <string name="s2s_title">滑动休眠</string>

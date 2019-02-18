@@ -22,7 +22,6 @@
     <string name="vib_strength_title_head">Сила вибрации</string>
 
     <string name="display_title">Экран</string>
-    <string name="device_doze_title">Автоматич. включение экрана</string>
 
     <!-- s2s -->
     <string name="s2s_title">Жест для сна</string>

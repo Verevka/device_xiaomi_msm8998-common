@@ -70,9 +70,6 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String USB_FASTCHARGE_KEY = "fastcharge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
 
-    final String KEY_DEVICE_DOZE = "device_doze";
-    final String KEY_DEVICE_DOZE_PACKAGE_NAME = "com.xiaomi.settings";
-
     private VibratorStrengthPreference mVibratorStrength;
 
     private S2SVibratorStrengthPreference mVibratorStrengthS2S;
@@ -136,11 +133,6 @@ public class DeviceSettings extends PreferenceFragment implements
         mVibratorStrengthS2S = (S2SVibratorStrengthPreference) findPreference(KEY_S2S_VIBSTRENGTH);
         if (mVibratorStrengthS2S != null) {
             mVibratorStrengthS2S.setEnabled(S2SVibratorStrengthPreference.isSupported());
-        }
-
-        if (!isAppInstalled(KEY_DEVICE_DOZE_PACKAGE_NAME)) {
-            PreferenceCategory displayCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_DISPLAY);
-            displayCategory.removePreference(findPreference(KEY_DEVICE_DOZE));
         }
     }
 
