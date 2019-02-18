@@ -25,6 +25,7 @@
 
     <!-- s2s -->
     <string name="s2s_title">Жест для сна</string>
+    <string name="s2s_title_summary">Выбранный жест необходимо выполнить внизу экрана</string>
     <string name="s2s_vib_strength_title_head">Сила вибрации жеста</string>
 
     <!-- Kcal -->
