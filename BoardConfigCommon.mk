@@ -53,6 +53,7 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=2048
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_CMDLINE += loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8998
@@ -241,9 +242,9 @@ TARGET_USES_OLD_MNC_FORMAT := true
 VENDOR_SECURITY_PATCH := 2018-10-01
 
 # SELinux
-BOARD_SEPOLICY_VERS := 28.0
-include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
+#BOARD_SEPOLICY_VERS := 28.0
+#include device/qcom/sepolicy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
