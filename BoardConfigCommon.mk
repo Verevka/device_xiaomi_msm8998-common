@@ -240,9 +240,6 @@ TARGET_USES_OLD_MNC_FORMAT := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2018-10-01
 
-# SDClang
-SDCLANG := true
-
 # SELinux
 BOARD_SEPOLICY_VERS := 28.0
 include device/qcom/sepolicy/sepolicy.mk
