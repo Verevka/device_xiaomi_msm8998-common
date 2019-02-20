@@ -41,6 +41,5 @@
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">CPU 模式</string>
     <string name="spectrum_title">CPU 运行模式</string>
-    <string name="spectrum_summary">选择 CPU 运行模式</string>
     <string name="spectrum_dialogTitle">选择 CPU 运行模式</string>
 </resources>

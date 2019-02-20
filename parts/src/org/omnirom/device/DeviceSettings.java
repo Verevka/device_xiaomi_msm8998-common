@@ -124,6 +124,7 @@ public class DeviceSettings extends PreferenceFragment implements
         if( mSPECTRUM != null ) {
             mSPECTRUM.setValue(SystemProperties.get(SPECTRUM_SYSTEM_PROPERTY, "0"));
             mSPECTRUM.setOnPreferenceChangeListener(this);
+            mSPECTRUM.setSummary(mSPECTRUM.getEntry());
         }
 
         mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
@@ -173,6 +174,8 @@ public class DeviceSettings extends PreferenceFragment implements
             return true;
         } else if (SPECTRUM_KEY.equals(key)) {
             strvalue = (String) newValue;
+            int index = mSPECTRUM.findIndexOfValue(strvalue);
+            mSPECTRUM.setSummary(mSPECTRUM.getEntries()[index]);
             SystemProperties.set(SPECTRUM_SYSTEM_PROPERTY, strvalue);
             return true;
         } else if (BUTTONS_SWAP_KEY.equals(key)) {

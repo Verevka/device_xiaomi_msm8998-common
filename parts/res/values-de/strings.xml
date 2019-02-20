@@ -40,6 +40,5 @@
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Kernel</string>
     <string name="spectrum_title">Kernel Profile</string>
-    <string name="spectrum_summary">Wähle dein Kernel Profil</string>
     <string name="spectrum_dialogTitle">Wähle dein Kernel Profil</string>
 </resources>

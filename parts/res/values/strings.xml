@@ -44,7 +44,6 @@
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Kernel Profiles</string>
     <string name="spectrum_title">Kernel Profile</string>
-    <string name="spectrum_summary">Choose your kernel profile</string>
     <string name="spectrum_dialogTitle">Choose your kernel profile</string>
 
     <!-- Swap HW buttons -->

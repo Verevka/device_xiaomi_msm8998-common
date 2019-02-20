@@ -41,7 +41,6 @@
         <ListPreference
             android:key="spectrum"
             android:title="@string/spectrum_title"
-            android:summary="@string/spectrum_summary"
             android:defaultValue="0"
             android:entries="@array/spectrum_profiles"
             android:entryValues="@array/spectrum_values"
