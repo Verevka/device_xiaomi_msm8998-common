@@ -2,7 +2,7 @@
 <resources>
     <!-- sweep2sleep -->
     <string-array name="s2sArray">
-        <item>Отключено</item>
+        <item>Отключен</item>
         <item>Скольжение вправо</item>
         <item>Скольжение влево</item>
         <item>Вправо или лево</item>

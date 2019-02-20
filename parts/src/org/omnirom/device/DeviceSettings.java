@@ -100,6 +100,7 @@ public class DeviceSettings extends PreferenceFragment implements
         mS2S = (ListPreference) findPreference(S2S_KEY);
         mS2S.setValue(FileUtils.getFileValue(FILE_S2S_TYPE, "0"));
         mS2S.setOnPreferenceChangeListener(this);
+        mS2S.setSummary(mS2S.getEntry());
 
         if (FileUtils.isFileWritable(BUTTONS_SWAP_PATH)) {
             mButtonSwap = (SwitchPreference) findPreference(BUTTONS_SWAP_KEY);
@@ -163,6 +164,8 @@ public class DeviceSettings extends PreferenceFragment implements
 
         if (S2S_KEY.equals(key)) {
             strvalue = (String) newValue;
+            int index = mS2S.findIndexOfValue(strvalue);
+            mS2S.setSummary(mS2S.getEntries()[index]);
             FileUtils.writeValue(FILE_S2S_TYPE, strvalue);
             SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
             editor.putString(S2S_KEY, strvalue);

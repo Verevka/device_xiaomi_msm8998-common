@@ -50,10 +50,10 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:title="@string/s2s_title">
+        android:title="@string/s2s_title"
+        android:summary="@string/s2s_title_summary_cat">
         <ListPreference
             android:title="@string/s2s_title"
-            android:summary="@string/s2s_title_summary"
             android:key="sweep2sleep"
             android:defaultValue="0"
             android:entries="@array/s2sArray"

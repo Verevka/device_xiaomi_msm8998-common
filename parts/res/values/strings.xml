@@ -25,7 +25,7 @@
 
     <!-- s2s -->
     <string name="s2s_title">Sweep to sleep</string>
-    <string name="s2s_title_summary">The selected gesture must be performed at the bottom of the screen.</string>
+    <string name="s2s_title_summary_cat">Do at the bottom of the screen</string>
     <string name="s2s_vib_strength_title_head">Sweep to sleep vibration</string>
 
     <!-- Kcal -->
