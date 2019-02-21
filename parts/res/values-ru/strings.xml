@@ -56,4 +56,12 @@
     <string name="usb_fastcharge_title">Быстрая USB зарядка</string>
     <string name="fastcharge_title">Включить быструю USB зарядку</string>
     <string name="fastcharge_summary">Позволяет быстро заряжать устройство при подключении к USB 3.X компьютера</string>
+
+    <!-- Cameras switcher -->
+    <string name="cam_switcher_cat">Переключатель камер</string>
+    <string name="cam_switcher_title">Используемая камера</string>
+    <string name="cam_dialog_title">Выберите камеру</string>
+    <string name="cam_miui">Камера MIUI</string>
+    <string name="cam_gcam">Камера (Google)</string>
+    <string name="cam_all">Все камеры</string>
 </resources>

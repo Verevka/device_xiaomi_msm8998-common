@@ -86,4 +86,17 @@
             android:summary="@string/fastcharge_summary"
             android:icon="@drawable/ic_usb_fastcharge" />
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="cam_switcher_cat"
+        android:title="@string/cam_switcher_cat">
+        <ListPreference
+            android:key="cam_switcher"
+            android:title="@string/cam_switcher_title"
+            android:defaultValue="com.android.camera"
+            android:entries="@array/cam_entires"
+            android:entryValues="@array/cam_values"
+            android:dialogTitle="@string/cam_dialog_title"
+            android:icon="@drawable/ic_camera" />
+    </PreferenceCategory>
 </PreferenceScreen>

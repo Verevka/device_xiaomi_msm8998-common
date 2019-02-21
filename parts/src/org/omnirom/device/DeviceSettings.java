@@ -70,8 +70,10 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String USB_FASTCHARGE_KEY = "fastcharge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
 
-    private VibratorStrengthPreference mVibratorStrength;
+    private static final String KEY_CATEGORY_CAM_SWITCHER = "cam_switcher_cat";
+    public static final String KEY_CAM_SWITCHER = "cam_switcher";
 
+    private VibratorStrengthPreference mVibratorStrength;
     private S2SVibratorStrengthPreference mVibratorStrengthS2S;
     private ListPreference mS2S;
     private Preference mKcalPref;
@@ -80,6 +82,10 @@ public class DeviceSettings extends PreferenceFragment implements
     private PreferenceCategory mHWButtons;
     private SwitchPreference mFastcharge;
     private PreferenceCategory mUsbFastcharge;
+    private PreferenceCategory mCamSwitcherCat;
+    private ListPreference mCamSwitcher;
+
+    private CharSequence[] mValues;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -133,6 +139,15 @@ public class DeviceSettings extends PreferenceFragment implements
         mVibratorStrengthS2S = (S2SVibratorStrengthPreference) findPreference(KEY_S2S_VIBSTRENGTH);
         if (mVibratorStrengthS2S != null) {
             mVibratorStrengthS2S.setEnabled(S2SVibratorStrengthPreference.isSupported());
+        }
+
+        mCamSwitcher = (ListPreference) findPreference(KEY_CAM_SWITCHER);
+        if( mCamSwitcher != null && CamSwitcherNotOneCam() && isGappsInstalled()) {
+            mCamSwitcher.setOnPreferenceChangeListener(this);
+            mCamSwitcher.setSummary(mCamSwitcher.getEntry());
+        } else {
+            mCamSwitcherCat = (PreferenceCategory) prefSet.findPreference(KEY_CATEGORY_CAM_SWITCHER);
+            prefSet.removePreference(mCamSwitcherCat);
         }
     }
 
@@ -188,6 +203,15 @@ public class DeviceSettings extends PreferenceFragment implements
             editor.putBoolean(USB_FASTCHARGE_KEY, value);
             editor.commit();
             return true;
+        } else if (KEY_CAM_SWITCHER.equals(key)) {
+            strvalue = (String) newValue;
+            int index = mCamSwitcher.findIndexOfValue(strvalue);
+            mCamSwitcher.setSummary(mCamSwitcher.getEntries()[index]);
+            CamSwitcher(index);
+            SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
+            editor.putString(KEY_CAM_SWITCHER, strvalue);
+            editor.commit();
+            return true;
         }
         return true;
     }
@@ -200,5 +224,47 @@ public class DeviceSettings extends PreferenceFragment implements
         } catch (PackageManager.NameNotFoundException e) {
         }
         return false;
+    }
+
+    // If only one (or less) camera is installed, then we return false
+    private boolean CamSwitcherNotOneCam() {
+        int mCount = 0;
+        mValues = mCamSwitcher.getEntryValues();
+        // (mValues.length - 1) - because the last value - "all"
+        for (int i = 0; i < mValues.length - 1; ++i) {
+            if (isAppInstalled(mValues[i].toString())) {
+                mCount++;
+            }
+        }
+        if ( mCount <= 1 ) {
+            return false;
+        }
+        return true;
+    }
+
+    private boolean isGappsInstalled() {
+        return isAppInstalled("com.google.android.gms");
+    }
+
+    private void CamSwitcher(int index) {
+        PackageManager pm = getContext().getPackageManager();
+        mValues = mCamSwitcher.getEntryValues();
+
+        if (index == (mValues.length - 1)) {
+            for (int i = 0; i < mValues.length - 1; ++i) {
+                pm.setApplicationEnabledSetting(mValues[i].toString(),
+                        PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 0);
+            }
+        } else {
+            for (int i = 0; i < mValues.length - 1; ++i) {
+                if (mValues[i].toString() == mValues[index].toString()) {
+                    pm.setApplicationEnabledSetting(mValues[i].toString(),
+                            PackageManager.COMPONENT_ENABLED_STATE_ENABLED, 0);
+                } else {
+                    pm.setApplicationEnabledSetting(mValues[i].toString(),
+                            PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
+                }
+            }
+        }
     }
 }

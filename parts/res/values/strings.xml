@@ -56,4 +56,12 @@
     <string name="usb_fastcharge_title">USB Fastcharge</string>
     <string name="fastcharge_title">Enable USB Fastcharge</string>
     <string name="fastcharge_summary">Enable to use fastcharge when connected to an computer USB 3.X</string>
+
+    <!-- Cameras switcher -->
+    <string name="cam_switcher_cat">Cameras Switcher</string>
+    <string name="cam_switcher_title">Used camera</string>
+    <string name="cam_dialog_title">Select the camera</string>
+    <string name="cam_miui">Camera MIUI</string>
+    <string name="cam_gcam">Camera (Google)</string>
+    <string name="cam_all">All cameras</string>
 </resources>
