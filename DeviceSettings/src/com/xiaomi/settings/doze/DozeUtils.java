@@ -87,6 +87,11 @@ public final class DozeUtils {
                 DOZE_ENABLED, 1) != 0;
     }
 
+    public static boolean isDozeAlwaysOnEnabled(Context context) {
+        return Settings.Secure.getInt(context.getContentResolver(),
+                DOZE_ALWAYS_ON, 1) != 0;
+    }
+
     protected static void launchDozePulse(Context context) {
         if (DEBUG) Log.d(TAG, "Launch doze pulse");
         context.sendBroadcastAsUser(new Intent(DOZE_INTENT),

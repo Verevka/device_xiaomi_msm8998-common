@@ -66,7 +66,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
             showHelp();
         }
 
-        boolean dozeEnabled = DozeUtils.isDozeEnabled(getActivity());
+        boolean dozeAlwaysOnEnabled = DozeUtils.isDozeAlwaysOnEnabled(getActivity());
 
         PreferenceCategory pickupSensorCategory = (PreferenceCategory) getPreferenceScreen().
                 findPreference(DozeUtils.CATEG_PICKUP_SENSOR);
@@ -74,15 +74,15 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
                 findPreference(DozeUtils.CATEG_PROX_SENSOR);
 
         mPickUpPreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_PICK_UP_KEY);
-        mPickUpPreference.setEnabled(dozeEnabled);
+        mPickUpPreference.setEnabled(!dozeAlwaysOnEnabled);
         mPickUpPreference.setOnPreferenceChangeListener(this);
 
         mHandwavePreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_HAND_WAVE_KEY);
-        mHandwavePreference.setEnabled(dozeEnabled);
+        mHandwavePreference.setEnabled(!dozeAlwaysOnEnabled);
         mHandwavePreference.setOnPreferenceChangeListener(this);
 
         mPocketPreference = (SwitchPreference) findPreference(DozeUtils.GESTURE_POCKET_KEY);
-        mPocketPreference.setEnabled(dozeEnabled);
+        mPocketPreference.setEnabled(!dozeAlwaysOnEnabled);
         mPocketPreference.setOnPreferenceChangeListener(this);
 
         // Hide proximity sensor related features if the device doesn't support them
