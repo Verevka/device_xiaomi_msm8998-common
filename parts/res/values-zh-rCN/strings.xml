@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> 
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2014-2017 The OmniROM Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,12 +17,14 @@
 <resources>
     <string name="app_name">高级设置</string>
     <string name="advanced_settings">其他设置</string>
-    <string name="advanced_settings_summary">色彩校准、双击唤醒、CPU 运行模式</string>
-
+    <string name="advanced_settings_summary">振动强度、色彩校准、CPU 运行模式、设备按键、USB 快速充电、相机切换</string>
+    <string name="category_system">系统</string>
+    <string name="vib_strength_title_head">振动强度</string>
     <string name="display_title">显示</string>
 
     <!-- s2s -->
     <string name="s2s_title">滑动休眠</string>
+    <string name="s2s_title_summary_cat">屏幕下方</string>
     <string name="s2s_vib_strength_title_head">滑动休眠振动强度</string>
 
     <!-- Kcal -->
@@ -36,11 +38,29 @@
     <string name="kcal_saturation">饱和度</string>
     <string name="kcal_contrast">对比度</string>
     <string name="menu_reset">重置</string>
-    <string name="kcal_color_temp">色温 (K)</string>
+    <string name="kcal_color_temp">色温(K)</string>
 
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">CPU 模式</string>
     <string name="spectrum_title">CPU 运行模式</string>
     <string name="spectrum_summary">选择 CPU 运行模式</string>
     <string name="spectrum_dialogTitle">选择 CPU 运行模式</string>
+
+    <!-- Swap HW buttons -->
+    <string name="hw_buttons_title">设备按键</string>
+    <string name="swap_hw_buttons_title">交换按键</string>
+    <string name="swap_hw_buttons_summary">交换最近任务键和返回键位置</string>
+
+    <!-- usb fastcharge -->
+    <string name="usb_fastcharge_title">USB 快速充电</string>
+    <string name="fastcharge_title">启用 USB 快速充电</string>
+    <string name="fastcharge_summary">当连接至电脑 USB 3.X 启用 USB 快速充电 </string>
+
+    <!-- Cameras switcher -->
+    <string name="cam_switcher_cat">相机切换</string>
+    <string name="cam_switcher_title">要使用的相机</string>
+    <string name="cam_dialog_title">选择相机</string>
+    <string name="cam_miui">MIUI 相机</string>
+    <string name="cam_gcam">Google 相机</string>
+    <string name="cam_all">所有相机</string>
 </resources>
