@@ -36,7 +36,7 @@
     </string-array>
     <string-array name="cam_values">
         <item>com.android.camera</item>
-        <item>com.google.android.GoogleCameraTele</item>
+        <item>com.google.android.GoogleCamera</item>
         <item>all</item>
     </string-array>
 </resources>
