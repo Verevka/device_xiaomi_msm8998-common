@@ -30,8 +30,6 @@
 #ifndef __POWER_HELPER_H__
 #define __POWER_HELPER_H__
 
-#include "hardware/power.h"
-
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -92,7 +90,6 @@ struct stat_pair {
     size_t num_parameters;
 };
 
-void set_feature(feature_t feature, int state);
 int extract_platform_stats(uint64_t *list);
 int extract_wlan_stats(uint64_t *list);
 

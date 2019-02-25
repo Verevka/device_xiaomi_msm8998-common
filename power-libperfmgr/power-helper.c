@@ -42,7 +42,6 @@
 #include <log/log.h>
 
 #include "power-helper.h"
-#include "utils.h"
 
 #ifndef RPM_SYSTEM_STAT
 #define RPM_SYSTEM_STAT "/d/system_stats"
@@ -121,16 +120,6 @@ static int parse_stats(const char **params, size_t params_size,
     return 0;
 }
 
-void set_feature(feature_t feature, int state)
-{
-    switch (feature) {
-        case POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
-            sysfs_write(TAP_TO_WAKE_NODE, state ? "1" : "0");
-            break;
-        default:
-            break;
-    }
-}
 
 static int extract_stats(uint64_t *list, char *file,
                          struct stat_pair *map, size_t map_size) {
