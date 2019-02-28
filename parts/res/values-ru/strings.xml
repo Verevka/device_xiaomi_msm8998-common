@@ -62,6 +62,6 @@
     <string name="cam_switcher_title">Используемая камера</string>
     <string name="cam_dialog_title">Выберите камеру</string>
     <string name="cam_miui">Камера MIUI</string>
-    <string name="cam_gcam">Камера (Google)</string>
+    <string name="cam_gcam">Камера Google</string>
     <string name="cam_all">Все камеры</string>
 </resources>
