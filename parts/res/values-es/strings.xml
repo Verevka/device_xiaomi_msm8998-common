@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2017 The OmniROM Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Xiaomi</string>
+    <string name="advanced_settings">Xiaomi</string>
+    <string name="advanced_settings_summary">Avanzado</string>
+    <string name="category_system">Sistema</string>
+    <string name="vib_strength_title_head">Fuerza de vibracion</string>
+
+    <string name="display_title">Pantalla</string>
+
+    <!-- s2s -->
+    <string name="s2s_title">Desplazar para dormir</string>
+    <string name="s2s_title_summary_cat">Hazlo en la parte inferior de la pantalla</string>
+    <string name="s2s_vib_strength_title_head">Vibracion al desplazar para dormir</string>
+
+    <!-- Kcal -->
+    <string name="kcal_title">Color de la pantalla</string>
+    <string name="kcal_summary">Calibración del color de la pantalla usando KCAL</string>
+    <string name="kcal_enabled_title">Activar KCAL</string>
+    <string name="kcal_enabled_summary">Encienda la calibración de pantalla usando KCAL</string>
+    <string name="kcal_red">Rojo</string>
+    <string name="kcal_green">Verde</string>
+    <string name="kcal_blue">Azul</string>
+    <string name="kcal_saturation">Saturacion</string>
+    <string name="kcal_contrast">Contraste</string>
+    <string name="menu_reset">Resetear</string>
+    <string name="kcal_color_temp">Temperatura de color (K)</string>
+
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">Perfiles Kernel</string>
+    <string name="spectrum_title">Perfil Kernel</string>
+    <string name="spectrum_dialogTitle">Elige tu perfil de kernel</string>
+
+    <!-- Swap HW buttons -->
+    <string name="hw_buttons_title">Botones hardware</string>
+    <string name="swap_hw_buttons_title">Intercambiar botones</string>
+    <string name="swap_hw_buttons_summary">Intercambia el orden del botón recientes y del botón atrás</string>
+
+    <!-- usb fastcharge -->
+    <string name="usb_fastcharge_title">Carga rápida USB</string>
+    <string name="fastcharge_title">Activar carga rápida USB</string>
+    <string name="fastcharge_summary">Habilite el uso de la carga rápida cuando esté conectado a un puerto USB 3.X</string>
+
+    <!-- Cameras switcher -->
+    <string name="cam_switcher_cat">Cambiar Cámaras</string>
+    <string name="cam_switcher_title">Cámara actual</string>
+    <string name="cam_dialog_title">Selecciona la cámara</string>
+    <string name="cam_miui">Cámara MIUI</string>
+    <string name="cam_gcam">Cámara Google</string>
+    <string name="cam_all">Todas las cámaras</string>
+</resources>

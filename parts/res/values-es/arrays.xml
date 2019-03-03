@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- sweep2sleep -->
+    <string-array name="s2sArray">
+        <item>Deshabilitado</item>
+        <item>Desplazar derecha</item>
+        <item>Desplazar izquierda</item>
+        <item>Desplazar derecha o izquierda</item>
+    </string-array>
+
+    <!-- spectrum profiles -->
+    <string-array name="spectrum_profiles">
+        <item>Equilibrado</item>
+        <item>Batería</item>
+        <item>Rendimiento</item>
+        <item>Gaming</item>
+    </string-array>
+</resources>
