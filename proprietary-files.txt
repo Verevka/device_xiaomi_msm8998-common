@@ -571,17 +571,19 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|2a025f9958da5151
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|7272bb0cd48c6cce01af56fa48a1a814c71499a4
 vendor/radio/qcril_database/qcril.db|ced4370ad96adba7e0f8c03018a3d188cb8e4ec4
 
+# Sensors - from Xiaomi Mi A2 PKQ1.180904.001
+vendor/bin/sensors.qti|cd3214e1f137d561bacf331b6b3f1f62920ddb7b
+vendor/lib/libsensor1.so|a34ac1e81a8eb93efe434829d74809a5aa307d3c
+vendor/lib64/libsensor1.so|322bd23852df0a0d6bfebf854e76f0181aa5ca7b
+
 # Sensors
-vendor/bin/sensors.qcom:vendor/bin/sensors.qti
 vendor/lib/hw/activity_recognition.msm8998.so
 vendor/lib/libsdsprpc.so
-vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
 vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/hw/activity_recognition.msm8998.so
 vendor/lib64/libsdsprpc.so
-vendor/lib64/libsensor1.so
 vendor/lib64/libsensor_reg.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/sensors.ssc.so
