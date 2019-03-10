@@ -1,0 +1,20 @@
+[
+ {
+   "remote"     : "gitlab",
+   "branch"     : "pie-7.4",
+   "repository" : "ShevT/android_kernel_xiaomi_msm8998",
+   "target_path": "kernel/xiaomi/msm8998"
+ },
+ {
+   "remote"     : "gitlab",
+   "branch"     : "pie",
+   "repository" : "ShevT/proprietary_vendor_xiaomi",
+   "target_path": "vendor/xiaomi"
+ },
+ {
+   "remote"     : "github",
+   "branch"     : "lineage-16.0",
+   "repository" : "LineageOS/android_packages_resources_devicesettings",
+   "target_path": "packages/resources/devicesettings"
+ }
+]
