@@ -250,25 +250,26 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl \
-    vendor.nxp.hardware.nfc@1.1-service \
-    com.android.nfc_extras \
+    NQNfcNci \
+    libnqnfc-nci \
+    libnqnfc_nci_jni \
+    nfc_nci.nqx.default \
+    libp61-jcop-kit \
     com.nxp.nfc.nq \
     com.nxp.nfc.nq.xml \
-    libnqnfc-nci \
-    libnqp61-jcop-kit \
-    nfc_nci.nqx.default.hw \
-    NQNfcNci \
     nqnfcee_access.xml \
     nqnfcse_access.xml \
-    Tag
-
-PRODUCT_PACKAGES += \
-    SecureElement
+    Tag \
+    com.android.nfc_extras \
+    vendor.nxp.hardware.nfc@1.1-service \
+    nfc_nci.nqx.default.hw
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.nfc_nci=nqx.default
 
 # Offline Charger
 PRODUCT_PACKAGES += \
