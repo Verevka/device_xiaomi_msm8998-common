@@ -176,16 +176,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.sys.sensors.pug=false \
 	persist.sys.sensors.spg=false \
 	ro.qti.sensors.taptap_gesture=true \
-	ro.vendor.sdk.sensors.gestures=false \
-	ro.vendor.sensors.cmc=false \
-	ro.vendor.sensors.dev_ori=false \
-	ro.vendor.sensors.dpc=true \
-	ro.vendor.sensors.facing=false \
-	ro.vendor.sensors.iod=false \
-	ro.vendor.sensors.mot_detect=true \
-	ro.vendor.sensors.multishake=true \
-	ro.vendor.sensors.pmd=false \
-	ro.vendor.sensors.sta_detect=true
+	ro.vendor.qti.sdk.sensors.gestures=false \
+	ro.vendor.qti.sensors.cmc=false \
+	ro.vendor.qti.sensors.dev_ori=false \
+	ro.vendor.qti.sensors.dpc=true \
+	ro.vendor.qti.sensors.facing=false \
+	ro.vendor.qti.sensors.iod=false \
+	ro.vendor.qti.sensors.mot_detect=true \
+	ro.vendor.qti.sensors.multishake=true \
+	ro.vendor.qti.sensors.pmd=false \
+	ro.vendor.qti.sensors.sta_detect=true
 
 # Time services
 PRODUCT_PROPERTY_OVERRIDES += \
