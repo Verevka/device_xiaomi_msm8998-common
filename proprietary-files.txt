@@ -68,6 +68,7 @@ lib/libminikin.so:vendor/lib/libminikin-v27.so
 lib/libskia.so:vendor/lib/libskia.so
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 lib64/libblurbuster.so
+lib64/libclearsight.so
 lib64/libhazebuster.so
 lib64/libfiltergenerator.so
 lib64/libjni_blurbuster.so
@@ -177,6 +178,7 @@ vendor/lib64/libchromaflash.so
 vendor/lib64/libdualcameraddm.so
 vendor/lib64/liboptizoom.so
 vendor/lib64/libseemore.so
+vendor/lib64/libts_face_beautify_hal.so
 vendor/lib64/libubifocus.so
 
 # Camera eeprom
