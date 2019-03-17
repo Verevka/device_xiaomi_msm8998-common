@@ -88,6 +88,8 @@ lib64/libjni_ubifocus.so
 lib64/libseestraight.so
 lib64/libtrueportrait.so
 lib64/libtruescanner.so
+vendor/lib/vndk/libbinder.so|40818133c54bdba208fe2dbda2b1938448209350
+vendor/lib/vndk-sp/libcutils.so|5c87ea4f464dfd80b39ddd0ebd851b7e679c240b
 vendor/lib/hw/camera.msm8998.so
 vendor/lib/lib_lowlight.so
 vendor/lib/lib_lowlight_dxo.so
