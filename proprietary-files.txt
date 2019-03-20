@@ -245,9 +245,9 @@ etc/permissions/cneapiclient.xml|15831adf0e80243042b90c734eea0a68eb8ae9c9
 etc/permissions/com.quicinc.cne.xml|e99e631d8b06ba4680529e9e4004d8d05baf6904
 framework/cneapiclient.jar|1f519b8dfac0a6768d1933beda49251592081053
 framework/com.quicinc.cne.jar|268c414592b7065952cbce4838212f34ec211fc5
-lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|618e11074d4b2351f96e15c4c6897b0fe424cc03
-lib64/vendor.qti.hardware.data.latency@1.0.so|7204cf8f2dcf8c88b531b86b0da0e643f1de6487
-lib64/vendor.qti.latency@2.0.so|15e50ce40e210993343406947dd2c959920f40c8
+lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|618e11074d4b2351f96e15c4c6897b0fe424cc03
+lib64/vendor.qti.hardware.data.latency@1.0.so:vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|7204cf8f2dcf8c88b531b86b0da0e643f1de6487
+lib64/vendor.qti.latency@2.0.so:vendor/lib64/vendor.qti.latency@2.0.so|15e50ce40e210993343406947dd2c959920f40c8
 -priv-app/CNEService/CNEService.apk|cb67095b6f807e713375327032a896562549975c
 vendor/bin/cnd|36f46a299d704ffc3215a56b23d50766c37f2e26
 vendor/lib64/com.quicinc.cne.api@1.0.so|1179434cbc23483d39a6d8291e2b338f1d35b80e
@@ -393,7 +393,7 @@ vendor/firmware/a540_zap.mdt
 
 # IMS - from lavender PKQ1.180904.001
 -priv-app/ims/ims.apk|4a7eec25ce95a6385abfc8a3802f13eeddc3f2c3
-lib64/com.qualcomm.qti.imscmservice@2.0.so|c14157e35f83b2481b83ca35d4925fcb135325aa
+lib64/com.qualcomm.qti.imscmservice@2.0.so:vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|c14157e35f83b2481b83ca35d4925fcb135325aa
 lib64/com.qualcomm.qti.imscmservice@2.1.so|56310782689ac800060cf045534c7d7cbac6a95a
 lib64/com.qualcomm.qti.uceservice@2.0.so|927297576baf01c083f08932ed7f69f6c19de89b
 lib64/lib-imscamera.so|40276a5a0996f13f8de45e673f49647ecae183db
