@@ -7,8 +7,8 @@
  },
  {
    "remote"     : "gitlab",
-   "branch"     : "pie",
-   "repository" : "ShevT/proprietary_vendor_xiaomi",
+   "branch"     : "pie-caf",
+   "repository" : "Verevka/proprietary_vendor_xiaomi",
    "target_path": "vendor/xiaomi"
  },
  {
