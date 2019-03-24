@@ -394,8 +394,8 @@ vendor/firmware/a540_zap.mdt
 # IMS - from lavender PKQ1.180904.001
 -priv-app/ims/ims.apk|4a7eec25ce95a6385abfc8a3802f13eeddc3f2c3
 lib64/com.qualcomm.qti.imscmservice@2.0.so:vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|c14157e35f83b2481b83ca35d4925fcb135325aa
-lib64/com.qualcomm.qti.imscmservice@2.1.so|56310782689ac800060cf045534c7d7cbac6a95a
-lib64/com.qualcomm.qti.uceservice@2.0.so|927297576baf01c083f08932ed7f69f6c19de89b
+lib64/com.qualcomm.qti.imscmservice@2.1.so:vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so|56310782689ac800060cf045534c7d7cbac6a95a
+lib64/com.qualcomm.qti.uceservice@2.0.so:vendor/lib64/com.qualcomm.qti.uceservice@2.0.so|927297576baf01c083f08932ed7f69f6c19de89b
 lib64/lib-imscamera.so|40276a5a0996f13f8de45e673f49647ecae183db
 lib64/lib-imsvideocodec.so|a3e5466b5e3955e051e1eb0dd823361816c27030
 lib64/lib-imsvt.so|8dafceb20cb519944b669278e61b532eed0d9060
