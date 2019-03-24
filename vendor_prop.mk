@@ -169,6 +169,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.radio.rat_on=combine \
 	persist.vendor.radio.sib16_support=1 \
 	rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
+    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
 	ro.telephony.default_cdma_sub=0 \
 	ro.telephony.default_network=9,9 \
 	ro.vendor.use_data_netmgrd=true \
