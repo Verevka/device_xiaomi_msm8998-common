@@ -58,13 +58,13 @@ on fs
 on post-fs
     wait_for_prop sys.listeners.registered true
 
-    write /dev/ipa 1
-
-on late-fs
     # Start devices by sysfs trigger
     write /sys/kernel/boot_adsp/boot 1
     write /sys/kernel/boot_slpi/boot 1
 
+    write /dev/ipa 1
+
+on late-fs
     # Start services for bootanim
     start surfaceflinger
     start bootanim
