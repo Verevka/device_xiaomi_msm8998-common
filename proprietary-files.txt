@@ -1,10 +1,19 @@
-# ADSP
-vendor/bin/adsprpcd
-vendor/lib/libadsprpc.so
-vendor/lib/libfastcvadsp_stub.so
-vendor/lib/libfastcvopt.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libadsp_default_listener.so
+# ADSP - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
+vendor/bin/adsprpcd|8b439846f016decb7519e5fd5cb2c86e192af036
+vendor/lib/libadsp_default_listener.so|ca63c1b2c34bbde74c2b1fc6009ca244a1ffa535
+vendor/lib/libadsp_hvx_callback_skel.so|dc7080c68699f69f76260891ebcedcd68a093d40
+vendor/lib/libadsp_hvx_stub.so|4fa14ca235ace82551549b571f767f475fbf4b67
+vendor/lib/libadsprpc.so|7f4ea2cadc7b9a88769eb686e2915996f6b84273
+vendor/lib/libfastcvadsp_stub.so|7811d12d68ec3f9fcbd05f55264b6dcec61bc75b
+vendor/lib/libfastcvopt.so|ce937eac4dc7ca52edd9e31ee2e97b3d5ee8483b
+vendor/lib/libmdsprpc.so|631c3ab07b9da2cf49d72c55f9ffe6f1a09b2dd5
+vendor/lib/libsdsprpc.so|fd493e54776c19a6ead3a14ab318d751a6e5da01
+vendor/lib64/libadsp_default_listener.so|d28ea3a0509c13ff75c700efe1107bb2d2481eb6
+vendor/lib64/libadsprpc.so|23460c2dbf4b0d8ec2a7a2c5fcdff47d7aa7e144
+vendor/lib64/libfastcvadsp_stub.so|0cbdc83819780d8aa7cb8707633439db330b655d
+vendor/lib64/libfastcvopt.so|9c677f0458bd04c5daf27951a89a3fc89513a46e
+vendor/lib64/libmdsprpc.so|463b8c924cf0606a398f965d2b8d31ecabd2157d
+vendor/lib64/libsdsprpc.so|c5b1b06fbb57cd7282215db2bdb1cad10ce788d8
 
 # ADSP modules
 vendor/lib/rfsa/adsp/dirac_resource.dar
