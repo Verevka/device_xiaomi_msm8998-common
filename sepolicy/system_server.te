@@ -16,3 +16,5 @@ allow system_server sysfs_vibrator:file rw_file_perms;
 allow system_server sysfs_vibrator:dir search;
 
 allow system_server vendor_file:file { execute r_file_perms };
+
+allow system_server sys_post_boot_prop:file r_file_perms;
