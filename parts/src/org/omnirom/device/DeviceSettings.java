@@ -76,7 +76,6 @@ public class DeviceSettings extends PreferenceFragment implements
     private VibratorStrengthPreference mVibratorStrength;
     private S2SVibratorStrengthPreference mVibratorStrengthS2S;
     private ListPreference mS2S;
-    private Preference mKcalPref;
     private ListPreference mSPECTRUM;
     private SwitchPreference mButtonSwap;
     private PreferenceCategory mHWButtons;
@@ -92,16 +91,6 @@ public class DeviceSettings extends PreferenceFragment implements
         setPreferencesFromResource(R.xml.main, rootKey);
 
         PreferenceScreen prefSet = getPreferenceScreen();
-
-        mKcalPref = findPreference("kcal");
-        mKcalPref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-            @Override
-            public boolean onPreferenceClick(Preference preference) {
-                Intent intent = new Intent(getContext(), DisplayCalibration.class);
-                startActivity(intent);
-                return true;
-            }
-        });
 
         mS2S = (ListPreference) findPreference(S2S_KEY);
         mS2S.setValue(FileUtils.getFileValue(FILE_S2S_TYPE, "0"));

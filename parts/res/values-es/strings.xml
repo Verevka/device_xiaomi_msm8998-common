@@ -21,25 +21,10 @@
     <string name="category_system">Sistema</string>
     <string name="vib_strength_title_head">Fuerza de vibracion</string>
 
-    <string name="display_title">Pantalla</string>
-
     <!-- s2s -->
     <string name="s2s_title">Desplazar para dormir</string>
     <string name="s2s_title_summary_cat">Hazlo en la parte inferior de la pantalla</string>
     <string name="s2s_vib_strength_title_head">Vibracion al desplazar para dormir</string>
-
-    <!-- Kcal -->
-    <string name="kcal_title">Color de la pantalla</string>
-    <string name="kcal_summary">Calibración del color de la pantalla usando KCAL</string>
-    <string name="kcal_enabled_title">Activar KCAL</string>
-    <string name="kcal_enabled_summary">Encienda la calibración de pantalla usando KCAL</string>
-    <string name="kcal_red">Rojo</string>
-    <string name="kcal_green">Verde</string>
-    <string name="kcal_blue">Azul</string>
-    <string name="kcal_saturation">Saturacion</string>
-    <string name="kcal_contrast">Contraste</string>
-    <string name="menu_reset">Resetear</string>
-    <string name="kcal_color_temp">Temperatura de color (K)</string>
 
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Perfiles Kernel</string>

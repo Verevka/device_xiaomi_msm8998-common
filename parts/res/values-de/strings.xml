@@ -18,24 +18,9 @@
     <string name="category_system">System</string>
     <string name="vib_strength_title_head">Vibrationsstärke</string>
 
-    <string name="display_title">Display</string>
-
     <!-- s2s -->
     <string name="s2s_title">Streichen zum Schlafen - Sweep2Sleep</string>
     <string name="s2s_vib_strength_title_head">Sweep2sleep Vibrationsstärke</string>
-
-    <!-- Kcal -->
-    <string name="kcal_title">Display Kalibrieren</string>
-    <string name="kcal_summary">Display Kalibrierung durch KCAL</string>
-    <string name="kcal_enabled_title">Aktiviere KCAL</string>
-    <string name="kcal_enabled_summary">Aktiviere die Kalibrieung durch KCAL</string>
-    <string name="kcal_red">Rot</string>
-    <string name="kcal_green">Grün</string>
-    <string name="kcal_blue">Blau</string>
-    <string name="kcal_saturation">Sättigung</string>
-    <string name="kcal_contrast">Kontrast</string>
-    <string name="menu_reset">Zurücksetzen</string>
-    <string name="kcal_color_temp">Farbtemperatur (K)</string>
 
     <!-- Spectrum Profiles -->
     <string name="spectrum_profile_title">Kernel</string>

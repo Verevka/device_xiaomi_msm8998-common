@@ -43,6 +43,5 @@ public class Startup extends BroadcastReceiver {
         FileUtils.writeValue(DeviceSettings.BUTTONS_SWAP_PATH, btnSwapStoredValue ? "1" : "0");
         boolean usbFastchargeStoredValue = PreferenceManager.getDefaultSharedPreferences(context).getBoolean(DeviceSettings.USB_FASTCHARGE_KEY, false);
         FileUtils.writeValue(DeviceSettings.USB_FASTCHARGE_PATH, usbFastchargeStoredValue ? "1" : "0" );
-        DisplayCalibration.restore(context);
     }
 }
