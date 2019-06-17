@@ -18,3 +18,7 @@ allow system_server sysfs_vibrator:dir search;
 allow system_server vendor_file:file { execute r_file_perms };
 
 allow system_server sys_post_boot_prop:file r_file_perms;
+
+# avc: denied { read } for pid=13322 comm="Binder:13322_7" path="/storage/emulated/0/Ringtones/09.mp3" dev="sdcardfs" ino=6897717
+# scontext=u:r:system_server:s0 tcontext=u:object_r:sdcardfs:s0 tclass=file permissive=0
+allow system_server sdcardfs:file r_file_perms;
